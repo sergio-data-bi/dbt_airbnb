@@ -1,0 +1,23 @@
+name: 'dbt_airbnb'
+version: '1.0.0'
+
+profile: 'dbt_airbnb'
+
+model-paths: ["models"]
+docs-paths: ["docs"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+
+models:
+  dbt_airbnb:
+    +materialized: view
+    src:
+      +materialized: ephemeral
