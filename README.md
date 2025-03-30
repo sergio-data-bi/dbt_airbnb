@@ -2,6 +2,8 @@
 
 This project demonstrates how to transform raw Airbnb listing data into a guest-centric data model using dbt. It is designed as a local demo that runs on DuckDB and showcases modular SQL modeling, testing, and documentation practices.
 
+<h3>📚 <a href="https://sergio-data-bi.github.io/dbt_airbnb" target="_blank">Open dbt Generated Documentation</a></h3>
+
 ## Overview
 
 The transformation pipeline ingests listing, review, and host data from [Inside Airbnb](https://insideairbnb.com/get-the-data/), restructures it using dbt, and outputs models optimized for analytics around guest behavior and value.
@@ -28,9 +30,9 @@ The data is modeled to support:
 ## Setup Instructions
 
 ```bash
-git clone https://github.com/your-username/dbt_airbnb.git
-cd dbt_airbnb
+pip install -r requirements.txt
 python scripts/ingest_airbnb_to_duckdb.py
+dbt deps
 dbt build
-dbt docs generate && dbt docs serve
+dbt docs generate
 ```
