@@ -3,8 +3,8 @@ import requests
 import io
 import duckdb
 
-SEED_CSV_PATH = "../seeds/demo_extractions.csv"
-DUCKDB_DATABASE_PATH = "../dev.duckdb"
+SEED_CSV_PATH = "seeds/demo_extractions.csv"
+DUCKDB_DATABASE_PATH = "dev.duckdb"
 SCHEMA = "raw"
 
 tables = {

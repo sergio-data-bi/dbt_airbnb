@@ -5,6 +5,7 @@ venv/
 **/__pycache__/
 tmp*/
 archive/
+.idea/
 package-lock.yml
 *.pyc
 *.duckdb
