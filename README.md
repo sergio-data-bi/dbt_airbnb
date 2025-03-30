@@ -27,6 +27,10 @@ The data is modeled to support:
 - `fct__reviews`: Fact table of guest reviews linked to listings
 - `agg__guest_stats`: Aggregated KPIs at the guest (reviewer) level
 
+## 🗺️ Model Lineage Graph
+
+![Lineage Graph](assets/dbt_lineage_graph.jpg)
+
 ## Setup Instructions
 
 ```bash
