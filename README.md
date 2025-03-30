@@ -30,9 +30,9 @@ The data is modeled to support:
 ## Setup Instructions
 
 ```bash
-git clone https://github.com/your-username/dbt_airbnb.git
-cd dbt_airbnb
+pip install -r requirements.txt
 python scripts/ingest_airbnb_to_duckdb.py
+dbt deps
 dbt build
-dbt docs generate && dbt docs serve
+dbt docs generate
 ```
